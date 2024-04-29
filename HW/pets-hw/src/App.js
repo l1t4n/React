@@ -1,27 +1,29 @@
 import {
-  Button,
+  DogInfo,
   Footer,
   Header,
-  Input,
-  Nav,
-  Slider,
 } from './components';
-import { Home } from './pages'
-import { Routes, Route, Link } from 'react-router-dom';
 
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { Gallery } from './pages';
 
 function App() {
   return (
-    <>
+    <div className='app'>
     <Header>
-      <Nav>
-        <Link to='/' element={<Home></Home>}></Link>
-      </Nav>
     </Header>
+
+    <Routes className='main'>
+        <Route path="/" element={<DogInfo></DogInfo>} />
+        <Route path="/gallery" element={<Gallery></Gallery>} />
+    </Routes>
+
+    
+
     <Footer></Footer>
       
-    </>
+    </div>
   );
 }
 

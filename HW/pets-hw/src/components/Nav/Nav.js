@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Nav = () => {
-    return <nav className="nav"></nav>
+export const Nav = (props) => {
+    return <nav className="nav">{props.children}</nav>
 }

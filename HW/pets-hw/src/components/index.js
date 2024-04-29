@@ -3,8 +3,7 @@ import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Input } from "./Input";
 import { Nav } from "./Nav";
-import { Slider } from "./Slider";
-import { Link } from "./Link";
+import { DogInfo } from "./DogInfo/DogInfo";
 
 export { 
     Button,
@@ -12,6 +11,5 @@ export {
     Header,
     Input,
     Nav,
-    Slider,
-    Link,
+    DogInfo
 }
